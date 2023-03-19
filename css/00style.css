@@ -1,0 +1,492 @@
+@import url('reset.css');
+/* 英文選用字體：'Varela Round */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* 主要字體：俊羽圓體 */
+@font-face {
+	font-family: YuPearl-Regular;
+	src: url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff) format("woff");
+}
+/* 備用字體：思源黑體 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* Mods */
+body {
+	font-family:'Varela Round', YuPearl-Regular , 'Noto Sans TC';
+	font-size: 0;
+	line-height: 1.33;
+}
+
+.mainblock {
+	background-color: #fff;
+	width: 100vw;
+	display: block;
+	margin: 0 auto;
+	color: #5F8C3B;
+	overflow: hidden;
+}
+
+.G {
+	background-color: #95BF47;
+	color: #fff;
+	width: 100vw;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	margin: 35px auto;
+}
+
+h2 {
+	font-size: 24px;
+	color: #fff;
+}
+
+
+.w {
+	color: #ffffff;
+}
+
+p {
+	font-size: 16px;
+	color: #000;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Top */
+.top {
+	background-image: url(../img/index/banner.png);
+	background-position: 0px right;
+	background-position: 0px bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 425px;
+	position: relative;
+}
+
+.top > img {
+	position: absolute;
+	right: 120px;
+	bottom:-60px;
+	scale: 0.7;
+}
+
+header {
+	height: 60px;
+	position: relative;
+	width: 100vw;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 40px;
+	padding: 10px;
+	float: left;
+	margin-right: 15px;
+}
+
+.title {
+	float: left;
+	line-height: 60px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, .25);
+	margin: 0 0;
+}
+
+/* 側選單 */
+nav {
+	width: 42px;
+	border-radius: 21px;
+	height: 520px;
+	/* height: 80vh; */
+	display: block;
+	background-color: #fff;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	z-index: 10;
+}
+
+.green {
+	width: 42px;
+	border-radius: 21px 21px 0px 0px;
+	height: 50%;
+	display: block;
+	background-color: #5F8C3B;
+	margin: 0 auto;
+	padding-top: 5px;
+	position: relative;
+}
+
+.green h1{
+	transform: rotate(90deg);
+	line-height: 0.9;
+	font-size: 28px;
+	margin: auto 13px;
+}
+
+
+
+.crcl {
+	width: 80%;
+	height: 33.6px;
+	border-radius: 20px;
+	background-color: #fff;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+.crcl img {
+	width: 66%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/* Services */
+
+
+.tabs {
+	display: flex;
+	width: 960px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.tabs a {
+	text-decoration: none;
+	font-size: 22px;
+	color: #fff;
+	display: inline-block;
+	background-color: #5F8C3B;
+	width: 150px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 21px 21px 0px 0px;
+	position: relative;
+}
+
+.tabs a:nth-child(2) {
+	background-color: #95BF47;
+}
+
+.tabs a:hover::before{
+	position: absolute;
+	top: -45px;
+	left: 0;
+	color: #fff;
+	font-size: 10px;
+	background: #346e7a;
+	padding: 5px;
+	border-radius: 5px;
+	content: '我還只是假按鈕(QAQ)';
+}
+
+.contents {
+	background-color: #95BF47;
+	display: block;
+	width: 960px;
+	height: auto;
+	margin: 0 auto 20px;
+	overflow: hidden;
+}
+
+.contents .pic {
+	display: block;
+	width: 160px;
+	height: 120px;
+	margin: 15px auto 0;
+	background-color: #fff;
+	background-image: url(../img/index/23548328.png);
+	background-size: cover;
+}
+
+.atc {
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.atc h3 {
+	font-size: 20px;
+	color: #fff;
+	text-align: left;
+	margin: 15px auto;
+}
+
+.atc p {
+	color: #fff;
+	display: block;
+	width: 620px;
+	margin: 0 auto 30px;
+}
+
+/* Cases */
+
+.cases > div {
+	display: block;
+	margin: 0 auto;
+	width: 960px;
+	display: flex;
+}
+
+.unf {
+	display: block;
+	width: 250px;
+	height: 200px;
+	margin-top: 60px;
+}	
+
+.unf1 {
+	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)),url(../img/index/purple-candy-sweet-pink-3aa34f9d9660c8999814a92ec4284cdd.jpg);
+	background-size: cover;
+}
+
+.unf2 {
+	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)),url(../img/index/4109059_s.jpg);
+	background-size: cover;
+}
+
+.focus {
+	display: block;
+	width: 275px;
+	height: 225px;
+	background-image: url(../img/index/4781122_s.jpg);
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.card {
+	display: block;
+	background-color: #FAD689;
+	width: 350px;
+	padding: 20px 20px 10px 20px;
+	position: relative;
+	margin: 0 50px 50px;
+}
+
+.card .L {
+	position: absolute;
+	left: -150px;
+	top: 120px;
+}
+
+.card .R {
+	position: absolute;
+	right: -150px;
+	top: 120px;
+}
+
+.card p {
+	width: 331px;
+	margin: 20px auto;
+}
+
+/* Partners */
+.G ul {
+	display: flex;
+	justify-content: space-evenly;
+	/* margin-left: 50px; */
+	margin-bottom: 50px;
+}
+
+.pners {
+	display: block;
+	height: 250px;
+	padding-top: 30px;
+}
+
+.pners > h2 {
+	font-size: 24px;
+	margin: 0 auto 30px;
+	color: #fff;
+	text-align: center;
+}
+
+/* News */
+
+.news ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.posts {
+	background-color: #fff;
+	border: 1px solid #5F8C3B;
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+	width: 250px;
+	padding: 0 20px;
+	margin-bottom: 50px;
+}
+
+.posts .pic {
+	display: block;
+	width: 230px;
+	height: 175px;
+	margin: 20px auto;
+	background-size: cover;
+}
+
+.posts .p1 {
+	background-image: url(../img/index/22551222_s.jpg);
+}
+
+.posts .p2 {
+	background-image: url(../img/index/25798103_s.jpg);
+}
+
+.posts .p3 {
+	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
+}
+
+.posts > h2 {
+	color: #5F8C3B;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.posts > p {
+	width: 230px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.posts a {
+	text-decoration: none;
+}
+
+.posts a span {
+	color: #777777;
+	font-size: 18px;
+	display: block;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+/* About us */
+
+.abu{
+	height: 500px;
+	position: relative;
+}
+
+.PandA .pic {
+	display: block;
+	width: 450px;
+	height: 300px;
+	border-radius: 25px;
+	background-image: url(../img/index/25102634_s.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 70px;
+	position: absolute;
+	z-index: 2;
+}
+
+.PandA .shd {
+	background-image: url();
+	background-color: #fff;
+	position: absolute;
+	bottom: 45px;
+	left: 45px;
+	z-index: 1;
+}
+
+.PandA p {
+	color: #fff;
+	width: 440px;
+	float: right;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+
+/* Footer */
+footer {
+	width: 100vw;
+	height: 130px;
+	background-color: #FAD689;
+	overflow: hidden;
+	position: relative;
+}
+
+footer ul {
+	width: 80vw;
+	margin: 48px auto 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	padding-left: 52.5px;
+	padding-right: 52.5px;
+	border-right: 1px solid #000;
+	/* border-left: 1px solid #000; */
+}
+
+footer ul li:nth-child(6) > a {
+	border-right:none;
+} 
+
+.topbtn {
+	width: 100vw;
+	height: 110px;
+	position: absolute;
+	position: relative;
+}
+
+.topbtn .crcl {
+	width: 33.6px;
+	height: 33.6px;
+	border-radius: 20px;
+	background-color: #fff;
+	display: block;
+	position: relative;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.topbtn .crcl img {
+	width: 66%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.topbtn {
+	display: block;
+	width: 33.6px;
+	height: 50px;
+	position: absolute;
+	right: 80px;
+	top: 35px;
+}
+
+.topbtn p {
+	font-size: 12px;
+	color: #5F8C3B;
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+}
+
+footer > p {
+	
+	text-align: center;
+	font-size: 8px;
+	margin: 20px auto;
+}
