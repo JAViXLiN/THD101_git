@@ -1,17 +1,19 @@
 @import url('reset.css');
 /* 英文選用字體：'Varela Round */
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 /* 主要字體：俊羽圓體 */
 @font-face {
 	font-family: YuPearl-Regular;
 	src: url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff) format("woff");
 }
+
 /* 備用字體：思源黑體 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 /* Mods */
 body {
-	font-family:'Varela Round', YuPearl-Regular , 'Noto Sans TC';
+	font-family: 'Varela Round', YuPearl-Regular, 'Noto Sans TC';
 	font-size: 0;
 	line-height: 1.33;
 }
@@ -66,10 +68,10 @@ p {
 	position: relative;
 }
 
-.top > img {
+.top>img {
 	position: absolute;
 	right: 120px;
-	bottom:-60px;
+	bottom: -60px;
 	scale: 0.7;
 }
 
@@ -121,7 +123,7 @@ nav {
 	position: relative;
 }
 
-.green h1{
+.green h1 {
 	transform: rotate(90deg);
 	line-height: 0.9;
 	font-size: 28px;
@@ -178,7 +180,7 @@ nav {
 	background-color: #95BF47;
 }
 
-.tabs a:hover::before{
+.tabs a:hover::before {
 	position: absolute;
 	top: -45px;
 	left: 0;
@@ -231,7 +233,7 @@ nav {
 
 /* Cases */
 
-.cases > div {
+.cases>div {
 	display: block;
 	margin: 0 auto;
 	width: 960px;
@@ -243,15 +245,15 @@ nav {
 	width: 250px;
 	height: 200px;
 	margin-top: 60px;
-}	
+}
 
 .unf1 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)),url(../img/index/purple-candy-sweet-pink-3aa34f9d9660c8999814a92ec4284cdd.jpg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)), url(../img/index/purple-candy-sweet-pink-3aa34f9d9660c8999814a92ec4284cdd.jpg);
 	background-size: cover;
 }
 
 .unf2 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)),url(../img/index/4109059_s.jpg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)), url(../img/index/4109059_s.jpg);
 	background-size: cover;
 }
 
@@ -304,7 +306,7 @@ nav {
 	padding-top: 30px;
 }
 
-.pners > h2 {
+.pners>h2 {
 	font-size: 24px;
 	margin: 0 auto 30px;
 	color: #fff;
@@ -348,13 +350,13 @@ nav {
 	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
 }
 
-.posts > h2 {
+.posts>h2 {
 	color: #5F8C3B;
 	text-align: center;
 	margin: 10px 0;
 }
 
-.posts > p {
+.posts>p {
 	width: 230px;
 	display: block;
 	margin: 0 auto 10px;
@@ -374,7 +376,7 @@ nav {
 
 /* About us */
 
-.abu{
+.abu {
 	height: 500px;
 	position: relative;
 }
@@ -426,7 +428,7 @@ footer ul {
 	justify-content: space-evenly;
 }
 
-footer ul li a{
+footer ul li a {
 	text-decoration: none;
 	color: #000;
 	font-size: 16px;
@@ -436,9 +438,9 @@ footer ul li a{
 	/* border-left: 1px solid #000; */
 }
 
-footer ul li:nth-child(6) > a {
-	border-right:none;
-} 
+footer ul li:nth-child(6)>a {
+	border-right: none;
+}
 
 .topbtn {
 	width: 100vw;
@@ -484,8 +486,8 @@ footer ul li:nth-child(6) > a {
 	margin-top: 5px;
 }
 
-footer > p {
-	
+footer>p {
+
 	text-align: center;
 	font-size: 8px;
 	margin: 20px auto;
