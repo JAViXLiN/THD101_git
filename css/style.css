@@ -16,34 +16,45 @@
 	color: #5F8C3B;
 }
 
-.top>img {
+.phone {
 	position: absolute;
 	right: 120px;
-	bottom: -180px;
+	top: 10px;
 	scale: 0.7;
+	animation-name:fadeIn;
+    animation-duration:1.5s;
 }
 
 /* Services */
 
+.service_content{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	/* text-align: center; */
+}
 
 .tabs {
+	width: 150px;
+	margin: 0;
+	height: 300px;
 	display: flex;
-	width: 960px;
-	margin: 0 auto;
-	justify-content: space-between;
+	flex-direction: column;
 }
 
 .tabs a {
+	flex-grow: 1;
+	display: block;
 	text-decoration: none;
 	font-size: 22px;
 	color: #fff;
 	display: inline-block;
 	background-color: #5F8C3B;
-	width: 150px;
-	height: 45px;
+	/* width: 150px; */
+	/* height: 45px; */
 	text-align: center;
-	line-height: 45px;
-	border-radius: 21px 21px 0px 0px;
+	line-height: 75px;
+	border-radius: 21px 0px 0px 21px;
 	position: relative;
 }
 
@@ -51,40 +62,32 @@
 	background-color: #95BF47;
 }
 
-.tabs a:hover::before {
-	position: absolute;
-	top: -45px;
-	left: 0;
-	color: #fff;
-	font-size: 10px;
-	background: #346e7a;
-	padding: 5px;
-	border-radius: 5px;
-}
-
 .contents {
 	background-color: #95BF47;
 	display: block;
-	width: 960px;
-	height: auto;
-	margin: 0 auto 20px;
-	overflow: hidden;
+	width: 810px;
+	height: 300px;
+	margin: 0 0 20px;
 }
 
 .contents .pic {
 	display: block;
 	width: 160px;
 	height: 120px;
-	margin: 15px auto 0;
 	background-color: #fff;
 	background-image: url(../img/index/23548328.png);
 	background-size: cover;
+	float: right;
+	margin-top: 80px;
+	margin-right: 60px;
 }
 
 .atc {
+	float: left;
 	display: block;
-	width: 600px;
-	margin: 0 auto;
+	width: 300px;
+	margin-top: 70px;
+	margin-left: 20px;
 }
 
 .atc h3 {
@@ -97,7 +100,7 @@
 .atc p {
 	color: #fff;
 	display: block;
-	width: 620px;
+	width: 500px;
 	margin: 0 auto 30px;
 }
 
@@ -163,10 +166,9 @@
 }
 
 /* Partners */
-.G ul {
+.GreenBG ul {
 	display: flex;
 	justify-content: space-evenly;
-	/* margin-left: 50px; */
 	margin-bottom: 50px;
 }
 
@@ -176,10 +178,16 @@
 	padding-top: 30px;
 }
 
+.pners a{
+	display: block;
+	border-radius: 17px;
+	border: 2px solid #FFF;
+}
+
+
 .pners>h2 {
 	font-size: 24px;
 	margin: 0 auto 30px;
-	color: #fff;
 	text-align: center;
 }
 

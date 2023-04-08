@@ -11,94 +11,71 @@
 <body>
     <!-- Top -->
 
-    <div class="top">
+    <div class="top" id="top">
         <header>
             <!-- logo -->
             <a href="./index.html">
                 <img src="./img/index/logo.svg" alt="" class="logo">
             </a>
             <!-- 網頁標題 -->
-            <!-- <h1 class="title w">SEO22 Shopify急診室</h1> -->
+            <h1 class="title">SEO22 Shopify急診室</h1>
             <!-- 選單 -->
-            <nav>
-                <div class="green">
+            <nav id="menu">
+                <div id="green">
                     <div class="crcl">
-                        <img src="./img/index/RC.png" alt="">
+                        <img src="./img/index/RC.png" id="cross">
+                        <span class="menu_text">ME</span><span class="menu_text">NU</span>
                     </div>
-                    <!-- <h1>MENU</h1> -->
+                    <!-- hidden -->
+                    <ul class="menu-list">
+                        <li class="menu_li hidden"><a href="./01services.html">服務內容</a></li>
+                        <li class="menu_li hidden"><a href="./02cases.html">過往案例</a></li>
+                        <li class="menu_li hidden"><a href="./03partners.html">合作夥伴</a></li>
+                        <li class="menu_li hidden"><a href="./04news.html">最新消息</a></li>
+                        <li class="menu_li hidden"><a href="./05aboutUs.html">關於我們</a></li>
+                        <li class="menu_li hidden"><a href="./06contactUs.html">聯絡我們</a></li>
+                    </ul>
                 </div>
+
             </nav>
         </header>
 
-        <img src="./img/index/TopMockup.png" alt="">
+        <img src="./img/index/TopMockup.png" class="phone">
     </div>
 
     <!-- Services -->
-    <section class="service">
+    <section class="mainblock">
         <h1>服務內容</h1>
-        <div id="tabs">
-            <ul>
-                <li><a href="#tabs-1">SEO</a></li>
-                <li><a href="#tabs-2">網頁維修</a></li>
-                <li><a href="#tabs-3">網頁建構</a></li>
-                <li><a href="#tabs-4">網頁設計</a></li>
-            </ul>
-            <div id="tabs-1">
-                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-                    nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
-                    molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
-                    in ligula suscipit aliquam. </p>
+
+        <div class="service_content">
+            <div class="tabs">
+                <a href="#">SEO</a>
+                <a href="#">網頁維修</a>
+                <a href="#">網頁建構</a>
+                <a href="#">網頁設計</a>
             </div>
-            <div id="tabs-2">
-                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-                    nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
-                    molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
-                    in ligula suscipit aliquam. </p>
-            </div>
-            <div id="tabs-3">
-                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-                    nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
-                    molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
-                    in ligula suscipit aliquam. </p>
+            <div class="contents"> 
+                <div class="pic"></div>
+                <div class="atc">
+                    <h3>網頁維修</h3>
+                     <p>
+                        SEO22團隊有專業的網站開發人員、設計師及網路行銷專家將為您提供完整的網站維護和更新服務，能保證您的網站的正常、流暢運作和功能，使您的網站用戶總是能有良好的使用體驗。
+                        我們的網頁維修服務項目包括：
+                    </p> 
+                    <ol>
+                        <li>網站優化：維修專業人員可以對網站進行優化，提高網站的速度和性能，以便用戶更快地加載網頁並提高用戶體驗。</li>
+                        <li>網站安全：網頁維修服務可以幫助客戶檢測網站中的漏洞和安全問題，並修復它們，以保護網站免受黑客攻擊和其他安全風險。</li>
+                        <li>3.網站資料更新</li>
+                    </ol> 
+                </div>
             </div>
         </div>
-        <div id="tabs-4">
-            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-                nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie
-                lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula
-                suscipit aliquam. </p>
-        </div>
+        
     </section>
-
-    <!-- <div class="mainblock">
-        <h1>服務內容</h1>
-
-        <div class="tabs">
-            <a href="#">SEO</a>
-            <a href="#">網頁維修</a>
-            <a href="#">網頁建構</a>
-            <a href="#">網頁設計</a>
-        </div> -->
-    <!-- <div class="contents">
-            <div class="pic"></div>
-            <div class="atc">
-                <h3>網頁維修</h3>
-                 <p>
-                    SEO22團隊有專業的網站開發人員、設計師及網路行銷專家將為您提供完整的網站維護和更新服務，能保證您的網站的正常、流暢運作和功能，使您的網站用戶總是能有良好的使用體驗。
-                    我們的網頁維修服務項目包括：
-                </p> 
-                <ol>
-                    <li>網站優化：維修專業人員可以對網站進行優化，提高網站的速度和性能，以便用戶更快地加載網頁並提高用戶體驗。</li>
-                    <li>網站安全：網頁維修服務可以幫助客戶檢測網站中的漏洞和安全問題，並修復它們，以保護網站免受黑客攻擊和其他安全風險。</li>
-                    <li>3.網站資料更新</li>
-                </ol> 
-            </div>
-        </div> -->
-    <!-- </div> -->
 
     <!-- Cases -->
 
-    <!-- <div class="cases mainblock">
+    <section class="cases mainblock">
         <h1>過往案例</h1>
 
         <div>
@@ -121,11 +98,11 @@
             <div class="unf unf2"></div>
         </div>
 
-    </div> -->
+    </section>
 
     <!-- Partners -->
 
-    <!-- <div class="mainblock GreenBG">
+    <section class="mainblock GreenBG">
         <h1>合作夥伴</h1>
 
         <ul>
@@ -154,11 +131,11 @@
                 </div>
             </li>
         </ul>
-    </div> -->
+    </section>
 
     <!-- News -->
 
-    <!-- <div class="news mainblock">
+    <section class="news mainblock">
         <h1>最新消息</h1>
 
         <ul>
@@ -193,10 +170,10 @@
                 </div>
             </li>
         </ul>
-    </div> -->
+    </section>
 
     <!-- About us -->
-    <!-- <div class="abu mainblock GreenBG">
+    <section class="abu mainblock GreenBG">
         <h1>關於我們</h1>
 
         <div class="PandA">
@@ -217,7 +194,7 @@
             </p>
         </div>
 
-    </div> -->
+    </section>
 
     <!-- Footer -->
 
