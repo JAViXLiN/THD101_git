@@ -1,60 +1,4 @@
-@import url('reset.css');
-/* 英文選用字體：'Varela Round */
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-/* 主要字體：俊羽圓體 */
-@font-face {
-	font-family: YuPearl-Regular;
-	src: url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff) format("woff");
-}
-
-/* 備用字體：思源黑體 */
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-
-/* Mods */
-body {
-	font-family: 'Varela Round', YuPearl-Regular, 'Noto Sans TC';
-	font-size: 0;
-	line-height: 1.33;
-}
-
-.mainblock {
-	background-color: #fff;
-	width: 100vw;
-	display: block;
-	margin: 0 auto;
-	color: #5F8C3B;
-	overflow: hidden;
-}
-
-.G {
-	background-color: #95BF47;
-	color: #fff;
-	width: 100vw;
-}
-
-h1 {
-	font-size: 40px;
-	text-align: center;
-	margin: 35px auto;
-}
-
-h2 {
-	font-size: 24px;
-	color: #fff;
-}
-
-
-.w {
-	color: #ffffff;
-}
-
-p {
-	font-size: 16px;
-	color: #000;
-	display: block;
-	margin: 0 auto;
-}
+@import url('common_mod.css');
 
 /* Top */
 .top {
@@ -64,92 +8,19 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100vw;
-	height: 425px;
+	height: 375px;
 	position: relative;
+	background-color: #fff;
+	display: block;
+	margin: 0 auto;
+	color: #5F8C3B;
 }
 
 .top>img {
 	position: absolute;
 	right: 120px;
-	bottom: -60px;
+	bottom: -180px;
 	scale: 0.7;
-}
-
-header {
-	height: 60px;
-	position: relative;
-	width: 100vw;
-	display: block;
-	margin: 0 auto;
-}
-
-.logo {
-	height: 40px;
-	padding: 10px;
-	float: left;
-	margin-right: 15px;
-}
-
-.title {
-	float: left;
-	line-height: 60px;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, .25);
-	margin: 0 0;
-}
-
-/* 側選單 */
-nav {
-	width: 42px;
-	border-radius: 21px;
-	height: 520px;
-	/* height: 80vh; */
-	display: block;
-	background-color: #fff;
-	position: fixed;
-	top: 5px;
-	right: 5px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	z-index: 10;
-}
-
-.green {
-	width: 42px;
-	border-radius: 21px 21px 0px 0px;
-	height: 50%;
-	display: block;
-	background-color: #5F8C3B;
-	margin: 0 auto;
-	padding-top: 5px;
-	position: relative;
-}
-
-.green h1 {
-	transform: rotate(90deg);
-	line-height: 0.9;
-	font-size: 28px;
-	margin: auto 13px;
-}
-
-
-
-.crcl {
-	width: 80%;
-	height: 33.6px;
-	border-radius: 20px;
-	background-color: #fff;
-	display: block;
-	position: relative;
-	margin: 0 auto;
-}
-
-.crcl img {
-	width: 66%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
 }
 
 /* Services */
@@ -189,7 +60,6 @@ nav {
 	background: #346e7a;
 	padding: 5px;
 	border-radius: 5px;
-	content: '我還只是假按鈕(QAQ)';
 }
 
 .contents {
@@ -410,85 +280,4 @@ nav {
 	float: right;
 	margin-right: 150px;
 	margin-top: 50px;
-}
-
-/* Footer */
-footer {
-	width: 100vw;
-	height: 130px;
-	background-color: #FAD689;
-	overflow: hidden;
-	position: relative;
-}
-
-footer ul {
-	width: 80vw;
-	margin: 48px auto 0;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-footer ul li a {
-	text-decoration: none;
-	color: #000;
-	font-size: 16px;
-	padding-left: 52.5px;
-	padding-right: 52.5px;
-	border-right: 1px solid #000;
-	/* border-left: 1px solid #000; */
-}
-
-footer ul li:nth-child(6)>a {
-	border-right: none;
-}
-
-.topbtn {
-	width: 100vw;
-	height: 110px;
-	position: absolute;
-	position: relative;
-}
-
-.topbtn .crcl {
-	width: 33.6px;
-	height: 33.6px;
-	border-radius: 20px;
-	background-color: #fff;
-	display: block;
-	position: relative;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.topbtn .crcl img {
-	width: 66%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-}
-
-.topbtn {
-	display: block;
-	width: 33.6px;
-	height: 50px;
-	position: absolute;
-	right: 80px;
-	top: 35px;
-}
-
-.topbtn p {
-	font-size: 12px;
-	color: #5F8C3B;
-	display: block;
-	text-align: center;
-	margin-top: 5px;
-}
-
-footer>p {
-
-	text-align: center;
-	font-size: 8px;
-	margin: 20px auto;
 }
