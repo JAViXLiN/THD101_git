@@ -1,0 +1,223 @@
+@import url('reset.css');
+
+/* 共用字體設定 */
+html {
+	font-size: 62.5%;
+	/* 預設字級是16px, 16 x 62.5% ＝ 10 , 方便計算*/
+}
+
+/* 英文選用字體：'Varela Round */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* 主要字體：俊羽圓體 */
+@font-face {
+	font-family: YuPearl-Regular;
+	src: url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/YuPearl@1.011/webfont/YuPearl-Regular.woff) format("woff");
+}
+
+/* 備用字體：思源黑體 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* Mods */
+body {
+	font-family: 'Varela Round', YuPearl-Regular, 'Noto Sans TC';
+	font-size: 0;
+	line-height: 1.33;
+	color: #5F8C3B;
+}
+
+.mainblock {
+	background-color: #fff;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.GreenBG {
+	background-color: #95BF47;
+	color: #fff;
+	width: 100vw;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	margin: 35px auto;
+}
+
+h2 {
+	font-size: 2.4rem;
+	color: #fff;
+}
+
+p {
+	font-size: 1.4rem;
+	color: #000;
+	display: block;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+/* Header */
+
+header {
+	height: 60px;
+	position: relative;
+	width: 100vw;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 40px;
+	padding: 10px;
+	float: left;
+	margin-right: 15px;
+}
+
+/* .title {
+	float: left;
+	line-height: 60px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, .25);
+	margin: 0 0;
+} */
+
+/* 選單 */
+nav {
+	width: 260px;
+	border-radius: 21px;
+	height: 42px;
+	display: block;
+	background-color: #fff;
+	position: fixed;
+	top: 5px;
+	right: calc(50vw - 130px);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	z-index: 10;
+}
+
+.green {
+	width: 50%;
+	border-radius: 21px 0px 0px 21px;
+	height: 100%;
+	/* display: block; */
+	background-color: #5F8C3B;
+	border: 1px solid #5F8C3B;
+	position: relative;
+}
+
+/* .green h1{
+	line-height: 0.9;
+	font-size: 28px;
+	margin: auto 13px;
+} */
+
+.crcl {
+	width: 33.6px;
+	height: 33.6px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+	position: relative;
+	margin-top: 4.1px;
+	margin-left: 4.1px;
+	/* margin: 0 auto; */
+}
+
+.crcl img {
+	width: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/* Footer */
+
+footer {
+	width: 100vw;
+	height: 130px;
+	background-color: #FAD689;
+	overflow: hidden;
+	position: relative;
+}
+
+footer ul {
+	width: 80vw;
+	margin: 48px auto 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer ul li {
+	flex-grow: 1;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	border-right: 1px solid #000;
+}
+
+footer ul li:nth-child(6)>a {
+	border-right: none;
+}
+
+.topbtn {
+	width: 100vw;
+	height: 110px;
+	position: absolute;
+	position: relative;
+}
+
+.topbtn .crcl {
+	width: 33.6px;
+	height: 33.6px;
+	border-radius: 20px;
+	background-color: #fff;
+	display: block;
+	position: relative;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+	margin-bottom: 5px;
+}
+
+.topbtn .crcl img {
+	width: 66%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.topbtn {
+	display: block;
+	width: 33.6px;
+	height: 50px;
+	position: absolute;
+	right: 80px;
+	top: 35px;
+}
+
+.topbtn p {
+	font-size: 12px;
+	color: #5F8C3B;
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 9px;
+}
+
+footer>p {
+
+	text-align: center;
+	font-size: 8px;
+	margin: 20px auto;
+}
