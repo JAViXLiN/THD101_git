@@ -1,3 +1,4 @@
+@import url('reset.css');
 @import url('common_mod.css');
 
 /* Top */
@@ -8,7 +9,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100vw;
-	height: 375px;
+	height: 475px;
 	position: relative;
 	background-color: #fff;
 	display: block;
@@ -16,78 +17,89 @@
 	color: #5F8C3B;
 }
 
+
 .phone {
 	position: absolute;
 	right: 120px;
-	top: 10px;
-	scale: 0.7;
-	animation-name:fadeIn;
-    animation-duration:1.5s;
+	top: 60px;
+	scale: 0.9;
 }
 
 /* Services */
 
-.service_content{
+
+.service_content {
 	width: 1000px;
 	margin: 0 auto;
 	display: flex;
-	/* text-align: center; */
 }
 
 .tabs {
 	width: 150px;
 	margin: 0;
-	height: 300px;
+	height: 400px;
 	display: flex;
 	flex-direction: column;
 }
 
-.tabs a {
+.tab-title li {
 	flex-grow: 1;
 	display: block;
-	text-decoration: none;
+	width: 150px;
 	font-size: 22px;
 	color: #fff;
 	display: inline-block;
 	background-color: #5F8C3B;
-	/* width: 150px; */
-	/* height: 45px; */
 	text-align: center;
-	line-height: 75px;
+	line-height: 100px;
 	border-radius: 21px 0px 0px 21px;
-	position: relative;
 }
 
-.tabs a:nth-child(2) {
+.tab-title li.active {
+	background-color: #95BF47;
+}
+
+.tab-title li a {
+	display: block;
+	text-decoration: none;
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 21px 0px 0px 21px;
+}
+
+.tab-title li a:hover {
+	background-color: #FAD689;
+}
+
+.tab-title li.active a:hover {
 	background-color: #95BF47;
 }
 
 .contents {
 	background-color: #95BF47;
-	display: block;
+	display: flex;
 	width: 810px;
-	height: 300px;
+	height: 400px;
 	margin: 0 0 20px;
+	z-index: 1;
 }
 
-.contents .pic {
-	display: block;
-	width: 160px;
-	height: 120px;
-	background-color: #fff;
-	background-image: url(../img/index/23548328.png);
-	background-size: cover;
-	float: right;
-	margin-top: 80px;
-	margin-right: 60px;
-}
+
 
 .atc {
-	float: left;
 	display: block;
 	width: 300px;
-	margin-top: 70px;
+	height: auto;
+	margin-top: 40px;
 	margin-left: 20px;
+}
+
+.contents>img {
+	background-color: #fff;
+	margin-left: 80px;
+	scale: 0.4;
 }
 
 .atc h3 {
@@ -102,6 +114,19 @@
 	display: block;
 	width: 500px;
 	margin: 0 auto 30px;
+}
+
+.atc ol {
+	margin-bottom: 40px;
+}
+
+.atc ol li {
+	text-indent: -1em;
+	font-size: 1.4rem;
+	color: #fff;
+	display: block;
+	width: 500px;
+	margin: 0 auto 30px 1em;
 }
 
 /* Cases */
@@ -167,8 +192,10 @@
 
 /* Partners */
 .GreenBG ul {
+	margin: 0 auto;
+	width: 800px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	margin-bottom: 50px;
 }
 
@@ -176,9 +203,10 @@
 	display: block;
 	height: 250px;
 	padding-top: 30px;
+
 }
 
-.pners a{
+.pners a {
 	display: block;
 	border-radius: 17px;
 	border: 2px solid #FFF;
