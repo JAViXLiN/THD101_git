@@ -64,7 +64,7 @@
 .tab-title li a {
 	display: block;
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 2.2rem;
 	color: #fff;
 	text-align: center;
 	line-height: 100px;
@@ -88,8 +88,6 @@
 	z-index: 1;
 }
 
-
-
 .atc {
 	display: block;
 	width: 300px;
@@ -102,12 +100,10 @@
 	height: 160px;
 	background-color: #fff;
 	margin: 100px 50px;
-	/* margin-left: -100px;
-	margin-right: -100px; */
 }
 
 .atc h3 {
-	font-size: 20px;
+	font-size: 2rem;
 	color: #fff;
 	text-align: left;
 	margin: 15px auto;
@@ -174,7 +170,7 @@
 
 
 /* Partners */
-.GreenBG ul {
+.partners_ul {
 	margin: 0 auto;
 	width: 800px;
 	display: flex;
@@ -204,7 +200,7 @@
 
 /* News */
 
-.news ul {
+.news_ul {
 	margin: 0 auto;
 	width: 1200px;
 	display: flex;
@@ -274,15 +270,159 @@
 
 /* RWD設定 */
 @media screen and (max-width: 414px) {
+
 	/* top */
-	.top{
+	.top {
 		height: 200px;
-		background-position:center;
+		background-position: center;
 		background-size: cover;
 	}
+
 	.phone {
 		display: none;
 	}
 
+	/*Services*/
+	.services {
+		width: 96vw;
+		display: flex;
+		flex-wrap: wrap;
+	}
 
+	.service_content {
+		display: block;
+		width: 96vw;
+	}
+
+	.tabs {
+		height: auto;
+		width: 96vw;
+	}
+
+	.tab-title {
+		width: 96vw;
+		display: flex;
+	}
+
+	.tab-title li {
+		border-radius: 21px 21px 0px 0px;
+		line-height: 50px;
+	}
+
+	.tab-title li a {
+		font-size: 2rem;
+		line-height: 50px;
+		border-radius: 21px 21px 0px 0px;
+	}
+
+	.contents {
+		width: 96vw;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.contents>img {
+		scale: 1;
+		background-color: #fff;
+		margin: 40px auto 20px;
+	}
+
+	.atc {
+		width: 96vw;
+		height: auto;
+		margin: 0px auto;
+	}
+
+	.atc h3 {
+		margin-left: 10px;
+	}
+
+	.atc p {
+		width: 90vw;
+		margin-bottom: 8px;
+	}
+
+	.atc ol {
+		width: 80vw;
+	}
+
+	.atc ol li {
+		width: 86vw;
+		font-size: 1.3rem;
+		margin: 0 auto 2px 26px;
+		text-align: justify;
+	}
+
+	/*Cases*/
+
+	.cases h1 {
+		margin-bottom: -45px;
+	}
+
+	.swiper {
+		width: 100vw;
+		height: 400px;
+		margin-bottom: 40px;
+	}
+
+	.casecard {
+		width: 310px;
+		height: 210px;
+		margin: 80px auto 50px;
+	}
+
+	/*Partners*/
+	.partners_ul {
+		width: 80vw;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pners {
+		padding-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.pners a {
+		margin: 0 auto;
+	}
+
+	/*News*/
+	.news_ul {
+		width: 80vw;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.news_ul li {
+		margin-bottom: -20px;
+	}
+
+	/*About us*/
+	.aboutUs {
+		width: 100vw;
+		height: auto;
+	}
+
+	.photoAndInfo {
+		width: 90vw;
+		height: auto;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.photoAndInfo>img {
+		margin-top: -30px;
+		box-shadow: 0px 290px 0px #FAD689;
+	}
+
+	.photoAndInfo p {
+		font-size: 1.2rem;
+		width: 250px;
+		margin: -20px auto 50px;
+		z-index: 1;
+	}
 }

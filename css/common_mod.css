@@ -155,7 +155,7 @@ header {
 	border-radius: 21px 0px 0px 21px;
 	height: 100%;
 	background-color: #5F8C3B;
-	border: 1px solid #5F8C3B;
+	border: 2px solid #5F8C3B;
 	position: relative;
 	cursor: pointer;
 	transition: .5s;
@@ -373,9 +373,10 @@ footer ul li:nth-child(6)>a {
 		font-size: 1.3rem;
 	}
 
-	img{
+	img {
 		scale: 0.7;
 	}
+
 	/* Header */
 	header {
 		height: 50px;
@@ -403,7 +404,13 @@ footer ul li:nth-child(6)>a {
 	}
 
 	.crcl {
+		margin-top: 2.8px;
+		margin-left: 3px;
 		margin-right: 10px;
+	}
+
+	.crcl img{
+		scale: 1;
 	}
 
 	.menu_li>a {
@@ -422,7 +429,7 @@ footer ul li:nth-child(6)>a {
 
 	.menu_text {
 		display: none;
-	}	
+	}
 
 	/* nav變形用動畫相關設定 */
 	#menu.expanded {
@@ -441,7 +448,7 @@ footer ul li:nth-child(6)>a {
 		margin: 20px auto 0;
 	}
 
-	.footerMenu li>a{
+	.footerMenu li>a {
 		font-size: 1rem;
 	}
 
@@ -452,9 +459,10 @@ footer ul li:nth-child(6)>a {
 		z-index: 100;
 	}
 
-	.copyright{
+	.copyright {
 		font-size: 0.8rem;
 	}
+
 	.topbtn p {
 		margin-top: 3px;
 		margin-left: 7px;
