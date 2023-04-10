@@ -9,13 +9,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <!-- Top -->
 
-    <div class="top" id="top">
+    <div class="top" id="particles-js">
         <header>
             <!-- logo -->
             <a href="./index.html">
@@ -42,12 +43,11 @@
                 </div>
             </nav>
         </header>
-
-        <img src="./img/index/TopMockup.png" class="phone">
     </div>
+    <img src="./img/index/TopMockup.png" class="phone">
 
     <!-- Services -->
-    <section class="mainblock">
+    <section class="services mainblock">
         <h1>服務內容</h1>
 
         <div class="service_content">
@@ -60,6 +60,7 @@
                 </ul>
             </div>
             <div id="tab01" class="contents tab-inner">
+                <img src="./img/index/25798103_s.jpg" alt="">
                 <div class="atc">
                     <h3>SEO</h3>
                     <p>
@@ -70,9 +71,9 @@
                         <li>1.網站優化：維修專業人員可以對網站進行優化，提高網站的速度和性能，以便用戶更快地加載網頁並提高用戶體驗。</li>
                     </ol>
                 </div>
-                <img src="" alt="">
             </div>
             <div id="tab02" class="contents tab-inner">
+                <img src="./img/index/23548328.png" alt="">
                 <div class="atc">
                     <h3>網頁維修</h3>
                     <p>
@@ -85,9 +86,9 @@
                         <li>3.網站資料更新</li>
                     </ol>
                 </div>
-                <img src="./img/index/23548328.png" alt="">
             </div>
             <div id="tab03" class="contents tab-inner">
+                <img src="./img/index/22551222_s.jpg" alt="">
                 <div class="atc">
                     <h3>網頁建構</h3>
                     <p>
@@ -98,9 +99,9 @@
                         <li>1.網站優化：維修專業人員可以對網站進行優化，提高網站的速度和性能，以便用戶更快地加載網頁並提高用戶體驗。</li>
                     </ol>
                 </div>
-                <img src="" alt="">
             </div>
             <div id="tab04" class="contents tab-inner">
+                <img src="./img/index/web-design-ge905435fe_1280.jpg" alt="">
                 <div class="atc">
                     <h3>網頁設計</h3>
                     <p>
@@ -111,7 +112,6 @@
                         <li>1.網站優化：維修專業人員可以對網站進行優化，提高網站的速度和性能，以便用戶更快地加載網頁並提高用戶體驗。</li>
                     </ol>
                 </div>
-                <img src="" alt="">
             </div>
         </div>
 
@@ -122,26 +122,34 @@
     <section class="cases mainblock">
         <h1>過往案例</h1>
 
-        <div>
-            <div class="unf unf1"></div>
-
-            <div class="card">
-                <a href="#" class="L"><img src="./img/index/L.svg" alt="">
-                </a>
-                <div class="focus">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="casecard">
+                        <img src="./img/index/4109059_s.jpg" alt="">
+                    </div>
                 </div>
-                <a href="#" class="R"><img src="./img/index/R.svg" alt="">
-                </a>
-
-                <p>
-                    「時尚簡約，價格親切」是SoLaR奉為核心的精神，SoLaR想讓每個人都能夠輕鬆穿出自己的風格。
-                    本案中SEO22將SoLaR服裝的時尚元素注入到網頁設計中，輔以網站速度優化、架構調整等服務，讓SoLaR推出的新季度單品的搜尋結果甚至超越UXiqlo新品的搜尋排名。
-                </p>
+                <div class="swiper-slide">
+                    <div class="casecard">
+                        <img src="./img/index/4781122_s.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="casecard">
+                        <img src="./img/index/purple-candy-sweet-pink-3aa34f9d9660c8999814a92ec4284cdd.jpg" alt="">
+                    </div>
+                </div>
             </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
 
-            <div class="unf unf2"></div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-
     </section>
 
     <!-- Partners -->
@@ -153,7 +161,7 @@
             <li>
                 <div class="pners">
                     <h2>金流商</h2>
-                    <a href="#">
+                    <a href="">
                         <img src="./img/index/Group 40.png" alt="">
                     </a>
                 </div>
@@ -161,7 +169,7 @@
             <li>
                 <div class="pners">
                     <h2>物流商</h2>
-                    <a href="#">
+                    <a href="">
                         <img src="./img/index/Group 41.png" alt="">
                     </a>
                 </div>
@@ -169,7 +177,7 @@
             <li>
                 <div class="pners">
                     <h2>EDM公司</h2>
-                    <a href="#">
+                    <a href="">
                         <img src="./img/index/Group 42.png" alt="">
                     </a>
                 </div>
@@ -184,31 +192,31 @@
 
         <ul>
             <li>
-                <div class="posts">
+                <div class="cards">
                     <div class="p1 pic"></div>
                     <h2>如何架設Shopify 網站</h2>
-                    <p>
-                        Shopify易於使用、提供完整電商功能且為響應式設計，本文將從註冊帳戶、選擇模板到自訂設計、上架產品等所有步驟一一說明，帶您......
+                    <p class="posts">
+                        Shopify易於使用、提供完整電商功能且為響應式設計，本文將從註冊帳戶、選擇模板到自訂設計、上架產品等所有步驟一一說明，帶您
                     </p>
                     <a href="#"><span>閱讀更多</span></a>
                 </div>
             </li>
             <li>
-                <div class="posts">
+                <div class="cards">
                     <div class="p2 pic"></div>
                     <h2>如何做好電商SEO？</h2>
-                    <p>
-                        本文將帶您了解如何選擇正確的關鍵詞、優化網站結構、創造高質量的內容、優化網站速度、產品標籤與描述優化、建立高質量的外部鏈接，以......
+                    <p class="posts">
+                        本文將帶您了解如何選擇正確的關鍵詞、優化網站結構、創造高質量的內容、優化網站速度、產品標籤與描述優化、建立高質量的外部鏈接，以
                     </p>
                     <a href="#"><span>閱讀更多</span></a>
                 </div>
             </li>
             <li>
-                <div class="posts">
+                <div class="cards">
                     <div class="p3 pic"></div>
                     <h2>Why Shopify？</h2>
-                    <p>
-                        Shopify提供一系列線上商店建置及管理的解決方案，它易用性強、功能豐富、可擴展性高，因此受到眾多中小型企業歡迎。如有意嘗試Shopify，......
+                    <p class="posts">
+                        Shopify提供一系列線上商店建置及管理的解決方案，它易用性強、功能豐富、可擴展性高，因此受到眾多中小型企業歡迎。如有意嘗試Shopify，
                     </p>
                     <a href="#"><span>閱讀更多</span></a>
                 </div>
@@ -217,12 +225,12 @@
     </section>
 
     <!-- About us -->
-    <section class="abu mainblock GreenBG">
+    <section class="aboutUs mainblock GreenBG">
         <h1>關於我們</h1>
-
-        <div class="PandA">
-            <div class="pic"></div>
-            <div class="pic shd"></div>
+        
+        <div class="photoAndInfo">
+            <img src="./img/index/25102634_s.jpg" alt="">
+            
 
             <p>SEO22團隊有多年SEO優化經驗，曾為香港知名理財部落客
                 <a href="https://gofire.today/">GOFIRE.TODAY</a>
@@ -237,13 +245,12 @@
                 4. SEO文案代寫
             </p>
         </div>
-
     </section>
 
     <!-- Footer -->
 
     <footer>
-        <ul>
+        <ul class="footerMenu">
             <li><a href="./01services.html">服務內容</a></li>
             <li><a href="./02cases.html">過往案例</a></li>
             <li><a href="./03partners.html">合作夥伴</a></li>
@@ -257,30 +264,20 @@
             <p>TOP</p>
         </div>
 
-        <p>2023 SEO22 All rights reserved.<br>
-            本站為緯育TibaMe 前端工程師班THD101 學員專題作品，僅供學習、展示之用
+        <p class="copyright">2023 SEO22 All rights reserved.<br>
+            本站為緯育TibaMe 前端工程師班THD101 學員專題作品，<br>僅供學習、展示之用
         </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particle.js"></script>
     <script>
-        VANTA.NET({
-            el: "#top",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x#ffffff,
-            backgroundColor: #95bf47,
-            points: 11.00,
-            maxDistance: 21.00
+        particlesJS.load('particles-js', './particles.json', function () {
+            console.log('particles.js loaded - callback');
         });
-    </script> -->
+    </script>
     <script src="./js/script.js"></script>
 </body>
 

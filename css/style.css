@@ -3,18 +3,18 @@
 
 /* Top */
 .top {
-	background-image: url(../img/index/banner.png);
-	background-position: 0px right;
-	background-position: 0px bottom;
+	background-image: url(../img/index/banner2.jpg);
+	background-color: #95BF47;
+	background-position: left -250px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100vw;
-	height: 475px;
+	height: 500px;
 	position: relative;
-	background-color: #fff;
 	display: block;
 	margin: 0 auto;
 	color: #5F8C3B;
+	overflow: hidden;
 }
 
 
@@ -26,7 +26,9 @@
 }
 
 /* Services */
-
+.services h1 {
+	margin-top: 60px;
+}
 
 .service_content {
 	width: 1000px;
@@ -93,13 +95,15 @@
 	width: 300px;
 	height: auto;
 	margin-top: 40px;
-	margin-left: 20px;
 }
 
 .contents>img {
+	width: 213.29px;
+	height: 160px;
 	background-color: #fff;
-	margin-left: 80px;
-	scale: 0.4;
+	margin: 100px 50px;
+	/* margin-left: -100px;
+	margin-right: -100px; */
 }
 
 .atc h3 {
@@ -112,12 +116,13 @@
 .atc p {
 	color: #fff;
 	display: block;
-	width: 500px;
+	width: 400px;
 	margin: 0 auto 30px;
 }
 
 .atc ol {
 	margin-bottom: 40px;
+	width: 400px;
 }
 
 .atc ol li {
@@ -125,70 +130,49 @@
 	font-size: 1.4rem;
 	color: #fff;
 	display: block;
-	width: 500px;
+	width: 400px;
 	margin: 0 auto 30px 1em;
 }
 
 /* Cases */
-
-.cases>div {
-	display: block;
-	margin: 0 auto;
-	width: 960px;
-	display: flex;
+/*Swiper 設定*/
+.swiper {
+	width: 900px;
+	height: 400px;
+	margin-bottom: 60px;
 }
 
-.unf {
-	display: block;
-	width: 250px;
-	height: 200px;
-	margin-top: 60px;
+.swiper-button-prev {
+	color: #95BF47;
 }
 
-.unf1 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)), url(../img/index/purple-candy-sweet-pink-3aa34f9d9660c8999814a92ec4284cdd.jpg);
-	background-size: cover;
+.swiper-button-next {
+	color: #95BF47;
 }
 
-.unf2 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, .66), rgba(0, 0, 0, 0.35)), url(../img/index/4109059_s.jpg);
-	background-size: cover;
+.swiper-pagination-bullet-active {
+	background-color: #95BF47;
 }
 
-.focus {
-	display: block;
-	width: 275px;
-	height: 225px;
-	background-image: url(../img/index/4781122_s.jpg);
-	background-size: cover;
-	margin: 0 auto;
-}
-
-.card {
-	display: block;
-	background-color: #FAD689;
-	width: 350px;
-	padding: 20px 20px 10px 20px;
+.casecard {
+	background-color: #FFF;
+	width: 500px;
+	height: 300px;
+	padding: 5px;
 	position: relative;
-	margin: 0 50px 50px;
+	margin: 40px auto 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 6px #777;
 }
 
-.card .L {
-	position: absolute;
-	left: -150px;
-	top: 120px;
+.casecard img {
+	width: 490px;
+	height: 290px;
 }
 
-.card .R {
-	position: absolute;
-	right: -150px;
-	top: 120px;
-}
-
-.card p {
-	width: 331px;
-	margin: 20px auto;
-}
+.swiper-pagination {}
 
 /* Partners */
 .GreenBG ul {
@@ -203,18 +187,18 @@
 	display: block;
 	height: 250px;
 	padding-top: 30px;
-
+	margin-bottom: 60px;
 }
 
 .pners a {
 	display: block;
 	border-radius: 17px;
 	border: 2px solid #FFF;
+	cursor: default;
 }
 
 
 .pners>h2 {
-	font-size: 24px;
 	margin: 0 auto 30px;
 	text-align: center;
 }
@@ -222,98 +206,84 @@
 /* News */
 
 .news ul {
+	margin: 0 auto;
+	width: 1200px;
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.posts {
-	background-color: #fff;
-	border: 1px solid #5F8C3B;
-	border-radius: 15px;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-	width: 250px;
-	padding: 0 20px;
-	margin-bottom: 50px;
-}
-
-.posts .pic {
-	display: block;
-	width: 230px;
-	height: 175px;
-	margin: 20px auto;
-	background-size: cover;
-}
-
-.posts .p1 {
+.cards .p1 {
 	background-image: url(../img/index/22551222_s.jpg);
 }
 
-.posts .p2 {
+.cards .p2 {
 	background-image: url(../img/index/25798103_s.jpg);
 }
 
-.posts .p3 {
+.cards .p3 {
 	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
-}
-
-.posts>h2 {
-	color: #5F8C3B;
-	text-align: center;
-	margin: 10px 0;
-}
-
-.posts>p {
-	width: 230px;
-	display: block;
-	margin: 0 auto 10px;
-}
-
-.posts a {
-	text-decoration: none;
-}
-
-.posts a span {
-	color: #777777;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	margin-bottom: 10px;
 }
 
 /* About us */
 
-.abu {
+.aboutUs {
 	height: 500px;
 	position: relative;
 }
 
-.PandA .pic {
+.photoAndInfo {
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.photoAndInfo>img {
 	display: block;
-	width: 450px;
-	height: 300px;
+	width: 400px;
+	height: 270px;
 	border-radius: 25px;
-	background-image: url(../img/index/25102634_s.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	float: left;
-	margin-left: 70px;
-	position: absolute;
-	z-index: 2;
+	box-shadow: 500px 0px 0px #FAD689;
 }
 
-.PandA .shd {
-	background-image: url();
-	background-color: #fff;
-	position: absolute;
-	bottom: 45px;
-	left: 45px;
-	z-index: 1;
+
+.photoAndInfo a {
+	text-decoration: none;
 }
 
-.PandA p {
-	color: #fff;
-	width: 440px;
-	float: right;
-	margin-right: 150px;
-	margin-top: 50px;
+.photoAndInfo a:link {
+	color: #5F8C3B;
+}
+
+.photoAndInfo a:visited {
+	color: #95BF47;
+}
+
+.photoAndInfo a:hover {
+	color: rgb(0, 119, 255);
+}
+
+.photoAndInfo a:active {
+	color: yellow;
+}
+
+.photoAndInfo p {
+	width: 300px;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+/* RWD設定 */
+@media screen and (max-width: 414px) {
+	/* top */
+	.top{
+		height: 200px;
+		background-position:center;
+		background-size: cover;
+	}
+	.phone {
+		display: none;
+	}
+
+	
 }
