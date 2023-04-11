@@ -16,13 +16,50 @@
 	color: #5F8C3B;
 	overflow: hidden;
 }
+.slogan {
+	position: absolute;
+	top: 130px;
+	opacity: 0;
+	left: -340px;
+	transition: 1.5s;
+}
 
+.slogan h1 {
+	font-size: 5rem;
+	text-align: left;
+	color: #FFF;
+	line-height: 1;
+	text-shadow: 1.5px 1.5px #777;
+	transition: .5s;
+}
+
+.slogan h1:nth-child(2) {
+	margin-left: 80px;
+	transition: 1s;
+}
+
+.slogan h1:nth-child(3) {
+	margin-left: 160px;
+	transition: 1.5s;
+}
+
+.slideIn {
+	left: 290px;
+	opacity: 1;
+}
 
 .phone {
+	opacity: 0;
 	position: absolute;
 	right: 120px;
-	top: 60px;
+	top: 0px;
 	scale: 0.9;
+}
+
+.fadeIn {
+	top: 60px;
+	opacity: 1;
+	transition: 1.5s;
 }
 
 /* Services */
@@ -59,6 +96,7 @@
 
 .tab-title li.active {
 	background-color: #95BF47;
+	border-right: 1px solid #95BF47;
 }
 
 .tab-title li a {
@@ -185,11 +223,10 @@
 	margin-bottom: 60px;
 }
 
-.pners a {
+.pners>div {
 	display: block;
 	border-radius: 17px;
 	border: 2px solid #FFF;
-	cursor: default;
 }
 
 
@@ -219,8 +256,8 @@
 	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
 }
 
-.mobileNews{
-    display: none;
+.mobileNews {
+	display: none;
 }
 
 /* About us */
@@ -283,12 +320,42 @@
 	}
 
 	.phone {
-		/* display: none; */
 		scale: 0.35;
 		right: -90px;
 		top: -90px;
 	}
 
+	.slogan {
+		position: absolute;
+		top: 70px;
+		opacity: 0;
+		left: -340px;
+		transition: 1.5s;
+	}
+	
+	.slogan h1 {
+		font-size: 2rem;
+		text-align: left;
+		color: #FFF;
+		line-height: .5;
+		text-shadow: 1.5px 1.5px #777;
+		transition: .5s;
+	}
+	
+	.slogan h1:nth-child(2) {
+		margin-left: 30px;
+		transition: 1s;
+	}
+	
+	.slogan h1:nth-child(3) {
+		margin-left: 60px;
+		transition: 1.5s;
+	}
+
+	.slideIn {
+		left: 40px;
+		opacity: 1;
+	}
 	/*Services*/
 	.services {
 		width: 96vw;
@@ -314,6 +381,10 @@
 	.tab-title li {
 		border-radius: 21px 21px 0px 0px;
 		line-height: 50px;
+	}
+
+	.tab-title li.active {
+		border-bottom: 2px solid #95BF47;
 	}
 
 	.tab-title li a {
@@ -369,7 +440,7 @@
 	.swiper {
 		width: 100vw;
 		height: 400px;
-		margin:0 auto 40px;
+		margin: 0 auto 40px;
 	}
 
 	.casecard {

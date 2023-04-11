@@ -23,7 +23,7 @@ $(function () {
       $(".menu_li").toggleClass('hidden');
       $(".nav-overlay").toggleClass('expanded');
     });
-    
+
   };
 
   // 點擊TOP按鈕後滾動至頂部
@@ -31,6 +31,15 @@ $(function () {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+
+  // 載入網頁後slogan、手機淡入
+  window.onload = function() {
+    var element1 = document.getElementById('slogan');
+    element1.classList.add('slideIn');
+    var element2 = document.getElementById('phone');
+    element2.classList.add('fadeIn');
+  };
 
   // 服務內容tabs
   var $li = $('ul.tab-title li');
@@ -60,11 +69,6 @@ $(function () {
       prevEl: '.swiper-button-prev',
     }
 
-  });
-
-  //合作夥伴
-  $(".pners a").click(function (e) {
-    e.preventDefault();
   });
 
   //最新消息
