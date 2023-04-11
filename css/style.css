@@ -362,7 +362,7 @@
 	.swiper {
 		width: 100vw;
 		height: 400px;
-		margin-bottom: 40px;
+		margin:0 auto 40px;
 	}
 
 	.casecard {
@@ -370,6 +370,8 @@
 		height: 210px;
 		margin: 80px auto 50px;
 	}
+
+
 
 	/*Partners*/
 	.partners_ul {
@@ -390,13 +392,25 @@
 
 	/*News*/
 	.news_ul {
-		width: 80vw;
-		flex-direction: column;
-		align-items: center;
+		display: none;
 	}
 
-	.news_ul li {
-		margin-bottom: -20px;
+	.mobileNews {
+		width: 90vw;
+		margin: 0 auto 60px;
+		height: auto;
+		position: relative;
+	}
+
+	.mobileNews-swiper-slide {
+		width: 70vw;
+		margin: 0 auto;
+	}
+
+	.news-pagination {
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
 	}
 
 	/*About us*/

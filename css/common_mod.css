@@ -414,17 +414,19 @@ footer ul li:nth-child(6)>a {
 	}
 
 	.menu_li>a {
-		font-size: 1rem;
+		font-size: 2.8rem;
 	}
 
 	.menu-list {
+		padding-top: 10px;
 		flex-wrap: wrap;
 	}
 
 	.menu_li {
 		flex-grow: 0;
-		margin-left: 40px;
-		line-height: 30px;
+		/* margin-top: 2px; */
+		margin-left: 100px;
+		line-height: 48px;
 	}
 
 	.menu_text {
@@ -435,7 +437,7 @@ footer ul li:nth-child(6)>a {
 	#menu.expanded {
 		right: 0px;
 		width: 100vw;
-		height: 70px;
+		height: 360px;
 	}
 
 	/* Footer */
