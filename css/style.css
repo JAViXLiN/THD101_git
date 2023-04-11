@@ -219,6 +219,10 @@
 	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
 }
 
+.mobileNews{
+    display: none;
+}
+
 /* About us */
 
 .aboutUs {
@@ -269,17 +273,20 @@
 }
 
 /* RWD設定 */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
 
 	/* top */
 	.top {
-		height: 200px;
-		background-position: center;
+		height: 250px;
+		background-position: 0px 35px;
 		background-size: cover;
 	}
 
 	.phone {
-		display: none;
+		/* display: none; */
+		scale: 0.35;
+		right: -90px;
+		top: -90px;
 	}
 
 	/*Services*/
@@ -396,6 +403,7 @@
 	}
 
 	.mobileNews {
+		display: block;
 		width: 90vw;
 		margin: 0 auto 60px;
 		height: auto;

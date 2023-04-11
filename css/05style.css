@@ -1,24 +1,31 @@
 @import url('common_mod.css');
 
-.cnt {
-	position: absolute;
+/* Top */
+.top {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Services.jpg);
+	background-size: cover;
+	background-position: 0px bottom;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 500px;
+	align-items: center;
+}
+
+.content {
+	margin: 50px auto;
 	width: 800px;
 	height: 250px;
-	left: 235px;
-	top: 100px;
+	padding: 10px;
 	background: rgba(95, 140, 59, 0.66);
 }
 
-.cnt>h1 {
+.content>h1 {
 	color: #fff;
 	text-align: center;
-	line-height: 1;
 	font-size: 32px;
 }
 
-.cnt p {
-	padding-top: 20px;
-	color: #fff;
+.content h2 {
 	text-align: center;
 }
 
@@ -26,7 +33,7 @@
 
 .info {
 	height: 1200px;
-	background: linear-gradient(0deg, rgba(149, 191, 71, 0.66), rgba(149, 191, 71, 0.66)), url(../img/BG.jpg);
+	background-color: #95BF47;
 	padding: 45px;
 }
 
@@ -79,4 +86,25 @@
 .mem p {
 	margin: 30px auto;
 	width: 250px;
+}
+
+/*以下新寫*/
+
+.members_ul {
+	margin: 0 auto;
+	width: 1200px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cards .p1 {
+	background-image: url(../img/index/22551222_s.jpg);
+}
+
+.cards .p2 {
+	background-image: url(../img/index/25798103_s.jpg);
+}
+
+.cards .p3 {
+	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
 }

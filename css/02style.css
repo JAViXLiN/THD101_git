@@ -1,3 +1,48 @@
 @import url('common_mod.css');
+/* Top */
+.top {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Services.jpg);
+	background-size: cover;
+	background-position: 0px bottom;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 500px;
+	align-items: center;
+}
+/* Cases */
+/*Swiper 設定*/
+.swiper {
+	width: 900px;
+	height: 400px;
+	margin-bottom: 60px;
+}
 
-/* Services */
+.swiper-button-prev {
+	color: #95BF47;
+}
+
+.swiper-button-next {
+	color: #95BF47;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #95BF47;
+}
+
+.casecard {
+	background-color: #FFF;
+	width: 500px;
+	height: 300px;
+	padding: 5px;
+	position: relative;
+	margin: 40px auto 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 6px #777;
+}
+
+.casecard img {
+	width: 490px;
+	height: 290px;
+}

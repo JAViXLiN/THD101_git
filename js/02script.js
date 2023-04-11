@@ -14,6 +14,24 @@ $(function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    //過往案例Swiper
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        initialSlide: 1,
+        loop: true,
 
+        // pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+
+    });
 
 });

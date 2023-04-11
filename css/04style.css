@@ -1,3 +1,41 @@
 @import url('common_mod.css');
 
-/* Services */
+/* Top */
+.top {
+    background-image: url(../img/index/banner2.jpg);
+    background-color: #95BF47;
+    background-position: left -250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    color: #5F8C3B;
+    overflow: hidden;
+}
+
+/* News */
+.news_ul {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .p1 {
+    background-image: url(../img/index/22551222_s.jpg);
+}
+
+.cards .p2 {
+    background-image: url(../img/index/25798103_s.jpg);
+}
+
+.cards .p3 {
+    background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
+}
+
+.mobileNews {
+    display: none;
+}

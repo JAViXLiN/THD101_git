@@ -1,3 +1,39 @@
 @import url('common_mod.css');
+/* Top */
+.top {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Services.jpg);
+	background-size: cover;
+	background-position: 0px bottom;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 500px;
+	align-items: center;
+}
+/* Partners */
+.partners_ul {
+	margin: 0 auto;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
 
-/* Services */
+.pners {
+	display: block;
+	height: 250px;
+	padding-top: 30px;
+	margin-bottom: 60px;
+}
+
+.pners a {
+	display: block;
+	border-radius: 17px;
+	border: 2px solid #FFF;
+	cursor: default;
+}
+
+
+.pners>h2 {
+	margin: 0 auto 30px;
+	text-align: center;
+}

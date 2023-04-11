@@ -18,26 +18,35 @@
     <div class="top mainblock">
         <header>
             <!-- logo -->
-            <a href="./00index.html">
-                <img src="./img/LOGO.svg" alt="" class="logo">
+            <a href="./index.html">
+                <img src="./img/index/logo.svg" alt="" class="logo">
             </a>
             <!-- 網頁標題 -->
             <h1 class="title">SEO22 Shopify急診室</h1>
-            <!-- 側選單 -->
-            <nav>
-                <div class="green">
+            <!-- nav選單 -->
+            <nav id="menu">
+                <div id="green">
                     <div class="crcl">
-                        <img src="./img/index/RC.png" alt="">
+                        <img src="./img/index/RC.png" id="cross">
+                        <span class="menu_text">ME</span><span class="menu_text">NU</span>
                     </div>
-                    <h1>MENU</h1>
+                    <!-- 點擊才顯示主選單 -->
+                    <ul class="menu-list">
+                        <li class="menu_li hidden"><a href="./01services.html">服務內容</a></li>
+                        <li class="menu_li hidden"><a href="./02cases.html">過往案例</a></li>
+                        <li class="menu_li hidden"><a href="./03partners.html">合作夥伴</a></li>
+                        <li class="menu_li hidden"><a href="./04news.html">最新消息</a></li>
+                        <li class="menu_li hidden"><a href="./05aboutUs.html">關於我們</a></li>
+                        <li class="menu_li hidden"><a href="./06contactUs.html">聯絡我們</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="cnt">
+        <div class="content">
             <h1>服務內容</h1>
-            <p>我們的服務含括SEO、網站維修、網站架設、網頁設計四大面向，<br>
-                為您的問題提供諮詢以找出最佳解決方法。</p>
+            <h2>我們的服務含括SEO、網站維修、網站架設、網頁設計四大面向，<br>
+                為您的問題提供諮詢以找出最佳解決方法。</h2>
         </div>
     </div>
 
@@ -80,7 +89,7 @@
     <!-- Footer -->
 
     <footer>
-        <ul>
+        <ul class="footerMenu">
             <li><a href="./01services.html">服務內容</a></li>
             <li><a href="./02cases.html">過往案例</a></li>
             <li><a href="./03partners.html">合作夥伴</a></li>
@@ -94,12 +103,13 @@
             <p>TOP</p>
         </div>
 
-        <p>2023 SEO22 All rights reserved.<br>
-            本站為緯育TibaMe 前端工程師班THD101 學員專題作品，僅供學習、展示之用
+        <p class="copyright">2023 SEO22 All rights reserved.<br>
+            本站為緯育TibaMe 前端工程師班THD101 學員專題作品，<br>僅供學習、展示之用
         </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/01script.js"></script>
 </body>
 
 </html>
