@@ -143,7 +143,7 @@ header {
 	top: 5px;
 	right: calc(50vw - 130px);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	z-index: 10;
+	z-index: 10000;
 	transition: all .8s cubic-bezier(0.5, 0, 0.1, 1.2);
 	cursor: pointer;
 	overflow: hidden;
@@ -173,8 +173,9 @@ header {
 .menu_li>a {
 	color: #fff;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 0rem;
 	padding: 5px;
+	transition: .5s;
 }
 
 .menu_li>a:hover {
@@ -219,6 +220,19 @@ header {
 	transition: .8s;
 }
 
+/*RWD用的overlay*/
+.nav-overlay {
+    display: block;
+    position: fixed;
+    top: -900px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0);
+	transition: all .8s cubic-bezier(0.5, 0, 0.1, 1.2);
+	z-index: 5000;
+}
+
 /* nav變形用動畫相關設定 */
 #menu.expanded {
 	right: calc(50vw - 440px);
@@ -230,6 +244,10 @@ header {
 	border-radius: 21px;
 	background-color: #95BF47;
 	border: 1px solid #95BF47;
+}
+
+.menu_li>a.expanded {
+	font-size: 2rem;
 }
 
 .menu_text.hidden {
@@ -388,7 +406,7 @@ footer ul li:nth-child(6)>a {
 		margin-left: -15px;
 		margin-top: -7.5px;
 	}
-	
+
 	.title {
 		color: #fff;
 		float: left;
@@ -412,25 +430,14 @@ footer ul li:nth-child(6)>a {
 		margin-right: 10px;
 	}
 
-	.crcl img{
+	.crcl img {
 		scale: 1;
 	}
 
 	.menu_li>a {
-		
-		font-size: 2.8rem;
+		width: 0vw;
+		font-size: 0rem;
 	}
-
-	/*待補a標籤變化
-	.menu_li>a{
-		display: inline-block;
-		text-align: center;
-		width: 100vw;
-		margin-left: -150px;
-		border: 1px solid red;
-		padding: 0px;
-	}
-	*/
 
 	.menu-list {
 		padding-top: 10px;
@@ -438,10 +445,7 @@ footer ul li:nth-child(6)>a {
 	}
 
 	.menu_li {
-		flex-grow: 0;
-		/* margin-top: 2px; */
-		margin-left: 100px;
-		line-height: 48px;
+		margin-top: 2px;
 	}
 
 	.menu_text {
@@ -453,7 +457,26 @@ footer ul li:nth-child(6)>a {
 		right: 0px;
 		width: 100vw;
 		height: 360px;
-		/* box-shadow: 0px 330px 40px 200px rgba(0, 0, 0, 0.5); */
+	}
+
+	.menu_li>a.expanded {
+		display: flex;
+		justify-content: center;
+		font-size: 2.6rem;
+		text-align: center;
+		width: 100vw;
+		margin-left: -50px;
+		/* border: 1px solid red; */
+	}
+	.nav-overlay.expanded {
+		top: 0;
+		width: 415px;
+		height: 900px;
+		background-color: rgba(56, 82, 40, 0.7);
+	}
+
+	#cross.turn {
+		scale: 1.16;
 	}
 
 	/* Footer */
