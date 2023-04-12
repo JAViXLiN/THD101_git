@@ -1,7 +1,7 @@
 @import url('common_mod.css');
 
 .top {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/ContactUs.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/ContactUs.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 .ContactUs {
 	width: 700px;
 	height: 600px;
-	background-image: url(/img/p0130_m.jfif);
+	background-image: url(../img/p0130_m.jfif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 80px auto;
