@@ -1,5 +1,18 @@
 @import url('common_mod.css');
 
+.top {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/ContactUs.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 500px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	color: #5F8C3B;
+	overflow: hidden;
+}
 
 
 /* ContactUs */
@@ -7,7 +20,9 @@
 .ContactUs {
 	width: 700px;
 	height: 600px;
-	background-color: #fff;
+	background-image: url(/img/p0130_m.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 80px auto;
 	position: relative;
 	overflow: visible;
@@ -16,30 +31,132 @@
 
 .ContactUs img {
 	position: absolute;
-	left: 300px;
-	top: -52.5px;
-	width: 15%;
+	left: 355px;
+	top: 5px;
+	width: 12%;
 }
 
 .ContactUs h2 {
+	color: #5F8C3B;
+	margin-top: 20px;
 	margin-bottom: 30px;
+	margin-left: 10px;
 }
 
-li {
-	margin: 15px 0;
+.form {
+	padding-left: 12px;
 }
 
-li p {
+.form li {
+	margin-bottom: 25px;
+}
+
+.form li p {
 	color: #5F8C3B;
 }
 
-li span {
+.form li span {
 	font-size: 16px;
 	color: #5F8C3B;
 	margin: 15px 15px 15px 0;
 }
 
-li textarea {
-	width: 620px;
+textarea {
+	width: 90%;
+}
+
+input[type=text] {
+	border: none;
+	outline: 0;
+	background: none;
+	border-bottom: 1px solid #5F8C3B;
+	width: 600px;
+	line-height: 20px;
+}
+
+
+input:focus {
+	background-color: rgba(166, 255, 131, 0.25);
+	border: 1px solid #5F8C3B;
+}
+
+input[type=checkbox] {
+	accent-color: #95BF47;
+}
+
+textarea {
+	width: 90%;
 	height: 150px;
+	background: none;
+}
+
+textarea:focus {
+	border: none;
+	width: 90%;
+	height: 150px;
+	background-color: rgba(166, 255, 131, 0.25);
+	outline: 0;
+	border: 1px solid #5F8C3B;
+}
+
+input[type=submit] {
+	margin-left: calc(50% - 170px);
+	margin-top: 30px;
+	border-radius: 10px;
+	border: none;
+	height: 32px;
+	width: 300px;
+	background-color: #95BF47;
+	color: #fff;
+	box-shadow: 1px 1px 5px #000;
+}
+
+/* RWD設定 */
+@media screen and (max-width: 415px) {
+	.top {
+		height: 250px;
+		background-position: 0px center;
+		background-size: cover;
+
+	}
+
+	.ContactUs {
+		width: 80vw;
+		margin-top: 40px;
+	}
+
+	.ContactUs img {
+		position: absolute;
+		left: 185px;
+	}
+
+	.ContactUs h2 {
+		margin-bottom: 35px;
+	}
+
+	.form li {
+		margin-bottom: 30px;
+	}
+
+	input[type=text] {
+		width: 200px;
+		line-height: 20px;
+	}
+
+	input[type=checkbox] {
+		accent-color: #95BF47;
+		margin-right: 15px;
+	}
+
+	input[type=submit] {
+		margin-left: calc(50% - 130px);
+		margin-top: 0px;
+		border-radius: 10px;
+		border: none;
+		height: 32px;
+		width: 200px;
+		background-color: #95BF47;
+		color: #fff;
+		box-shadow: 1px 1px 5px #000;
+	}
 }

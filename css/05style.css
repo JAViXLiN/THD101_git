@@ -2,9 +2,9 @@
 
 /* Top */
 .top {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Services.jpg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/AboutUs.JPG);
 	background-size: cover;
-	background-position: 0px bottom;
+	background-position: 0px center;
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 500px;
@@ -31,74 +31,21 @@
 
 /* About us */
 
-.info {
-	height: 1200px;
+.aboutUs {
+	padding: 30px auto;
 	background-color: #95BF47;
-	padding: 45px;
 }
 
-.info h2 {
-	color: #fff;
-	font-size: 30px;
-	margin-bottom: 30px;
-}
-
-.info .mem {
-	background-color: #fff;
-	width: 300px;
-	height: 500px;
-	border-radius: 25px;
-	box-sizing: border-box;
-	overflow: hidden;
-	margin-bottom: 30px;
-}
-
-.mem .photo {
-	display: block;
-	width: 300px;
-	height: 250px;
-	border-radius: 25px 25px 0 0;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-bottom: 15px;
-}
-
-.mem .L {
-	background-image: url(../img/Clara2.jpg);
-	background-size: cover;
-}
-
-.mem .D {
-	background-image: url(../img/Soe.jpg);
-	background-size: cover;
-}
-
-.mem strong {
-	color: #5F8C3B;
-	font-size: 25px;
-	margin-left: 15px;
-}
-
-.mem .ttl {
-	color: #95BF47;
-}
-
-.mem p {
-	margin: 30px auto;
-	width: 250px;
-}
-
-/*以下新寫*/
 
 .members_ul {
-	margin: 0 auto;
+	margin: 60px auto;
 	width: 1200px;
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .cards .p1 {
-	background-image: url(../img/index/22551222_s.jpg);
+	background-image: url(/img/Clara2.jpg);
 }
 
 .cards .p2 {
@@ -107,4 +54,43 @@
 
 .cards .p3 {
 	background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
+}
+
+/* RWD設定 */
+@media screen and (max-width: 415px) {
+
+	/* top */
+	.top {
+		height: 250px;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.content {
+		margin: 0 auto;
+		width: 300px;
+		height: 160px;
+		padding: 10px;
+		background: rgba(95, 140, 59, 0.66);
+	}
+
+	.content>h1 {
+		font-size: 2.4rem;
+	}
+
+	.content h2 {
+		margin: 0 auto;
+		width: 270px;
+		font-size: 1.5rem;
+		text-align: justify;
+	}
+
+	.members_ul {
+		margin: 60px;
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		/* border: 1px solid #000; */
+	}
 }

@@ -2,9 +2,9 @@
 
 /* Top */
 .top {
-    background-image: url(../img/index/banner2.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/News.jpg);
     background-color: #95BF47;
-    background-position: left -250px;
+    background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -24,18 +24,22 @@
     justify-content: space-evenly;
 }
 
-.cards .p1 {
-    background-image: url(../img/index/22551222_s.jpg);
-}
+/* RWD設定 */
+@media screen and (max-width: 415px) {
 
-.cards .p2 {
-    background-image: url(../img/index/25798103_s.jpg);
-}
+    /* top */
+    .top {
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+    }
 
-.cards .p3 {
-    background-image: url(../img/index/laurin-steffens-IVGZ6NsmyBI-unsplash.jpg);
-}
+    .news_ul {
+        width: 100vw;
+        flex-direction: column;
+    }
 
-.mobileNews {
-    display: none;
+    .news_ul li{
+        margin: 0 auto;
+    }
 }

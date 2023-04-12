@@ -1,20 +1,23 @@
 @import url('common_mod.css');
+
 /* Top */
 .top {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Services.jpg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Partners.jpg);
 	background-size: cover;
-	background-position: 0px bottom;
+	background-position: 0px center;
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 500px;
 	align-items: center;
 }
+
 /* Partners */
 .partners_ul {
 	margin: 0 auto;
 	width: 800px;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-evenly;
 	margin-bottom: 50px;
 }
 
@@ -25,15 +28,74 @@
 	margin-bottom: 60px;
 }
 
-.pners a {
+.pners>div {
 	display: block;
 	border-radius: 17px;
 	border: 2px solid #FFF;
-	cursor: default;
+	padding: 20px;
+	overflow: hidden;
 }
-
 
 .pners>h2 {
 	margin: 0 auto 30px;
 	text-align: center;
+}
+
+.pners>div>p {
+	float: right;
+	width: 500px;
+	color: #FFF;
+	margin-top: 30px;
+}
+
+.pners>img {
+	float: left;
+	margin-right: 10px;
+}
+
+/* RWD設定 */
+@media screen and (max-width: 415px) {
+
+	/* top */
+	.top {
+		height: 250px;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/* Partners */
+	.partners_ul {
+		margin: 0 auto;
+		width: 95vw;
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	.pners {
+		display: block;
+		height: auto;
+		margin-bottom: 60px;
+	}
+
+	.pners>div {
+		display: block;
+		border: 1px solid #FFF;
+		height: auto;
+		padding: 0px;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+
+	.pners>img {
+		margin-right: 10px;
+	}
+
+	.pners>div>p {
+		display: block;
+		float: right;
+		width: 150px;
+		color: #FFF;
+		margin-top: 0px;
+	}
 }

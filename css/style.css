@@ -16,6 +16,7 @@
 	color: #5F8C3B;
 	overflow: hidden;
 }
+
 .slogan {
 	position: absolute;
 	top: 130px;
@@ -206,11 +207,10 @@
 	height: 290px;
 }
 
-
 /* Partners */
 .partners_ul {
 	margin: 0 auto;
-	width: 800px;
+	width: 1040px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
@@ -332,7 +332,7 @@
 		left: -340px;
 		transition: 1.5s;
 	}
-	
+
 	.slogan h1 {
 		font-size: 2rem;
 		text-align: left;
@@ -341,12 +341,12 @@
 		text-shadow: 1.5px 1.5px #777;
 		transition: .5s;
 	}
-	
+
 	.slogan h1:nth-child(2) {
 		margin-left: 30px;
 		transition: 1s;
 	}
-	
+
 	.slogan h1:nth-child(3) {
 		margin-left: 60px;
 		transition: 1.5s;
@@ -356,6 +356,7 @@
 		left: 40px;
 		opacity: 1;
 	}
+
 	/*Services*/
 	.services {
 		width: 96vw;
@@ -397,6 +398,7 @@
 		width: 96vw;
 		flex-direction: column;
 		height: auto;
+		padding-bottom: 20px;
 	}
 
 	.contents>img {
@@ -431,6 +433,12 @@
 		text-align: justify;
 	}
 
+	.toServices {
+		font-size: 1.3rem;
+		color: #000;
+		border: 10px solid red;
+	}
+
 	/*Cases*/
 
 	.cases h1 {
@@ -447,9 +455,12 @@
 		width: 310px;
 		height: 210px;
 		margin: 80px auto 50px;
+		overflow: hidden;
 	}
 
-
+	.casecard>img {
+		width: 438px;
+	}
 
 	/*Partners*/
 	.partners_ul {

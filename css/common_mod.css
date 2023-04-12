@@ -57,6 +57,11 @@ p {
 	text-align: justify;
 }
 
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
 .cards {
 	background-color: #fff;
 	border: 1px solid #5F8C3B;
@@ -73,13 +78,18 @@ p {
 	width: 230px;
 	height: 175px;
 	margin: 20px auto;
-	background-size: cover;
 }
 
 .cards>h2 {
 	color: #5F8C3B;
 	text-align: center;
 	margin: 10px 0;
+}
+
+.cards>strong {
+	color: #95BF47;
+	font-size: 2rem;
+	margin-left: 10px;
 }
 
 .cards>p {
@@ -100,6 +110,34 @@ p {
 	margin-bottom: 10px;
 }
 
+.getInfoBtn1 {
+	text-decoration: none;
+	display: block;
+	float: right;
+	font-size: 2rem;
+	color: #fff;
+	margin-right: -100px;
+	margin-bottom: 45px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 7.5px;
+}
+
+.getInfoBtn2 {
+	text-decoration: none;
+	display: block;
+	width: 120px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 auto;
+	font-size: 2rem;
+	color: #fff;
+	margin-bottom: 45px;
+	text-align: center;
+	background-color: #95BF47;
+	border-radius: 15px;
+	margin-top: -40px;
+}
 
 /*--------Mods end--------*/
 
@@ -219,13 +257,13 @@ header {
 
 /*RWD用的overlay*/
 .nav-overlay {
-    display: block;
-    position: fixed;
-    top: -900px;
-    right: 0px;
-    width: 0px;
-    height: 0px;
-    background-color: rgba(0, 0, 0, 0);
+	display: block;
+	position: fixed;
+	top: -900px;
+	right: 0px;
+	width: 0px;
+	height: 0px;
+	background-color: rgba(0, 0, 0, 0);
 	transition: all .8s cubic-bezier(0.5, 0, 0.1, 1.2);
 	z-index: 5000;
 }
@@ -465,6 +503,7 @@ footer ul li:nth-child(6)>a {
 		margin-left: -50px;
 		/* border: 1px solid red; */
 	}
+
 	.nav-overlay.expanded {
 		top: 0;
 		width: 415px;

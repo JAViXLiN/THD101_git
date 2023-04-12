@@ -34,7 +34,7 @@ $(function () {
 
 
   // 載入網頁後slogan、手機淡入
-  window.onload = function() {
+  window.onload = function () {
     var element1 = document.getElementById('slogan');
     element1.classList.add('slideIn');
     var element2 = document.getElementById('phone');
@@ -78,8 +78,14 @@ $(function () {
     var p = ps[i]; // 獲取當前的段落
     var text = p.textContent; // 獲取段落內的文字
     if (text.length > limit) { // 如果文字超過限制
-      text = text.substring(0, limit) + "......"; // 截取前limit個字，並加上...
+      text = text.substring(0, limit) + "......"; // 截取前limit個字，並加上......
       p.textContent = text; // 更新段落內的文字
     }
   }
+
+  var $a = $(".cards>a");
+  $a.click(function (e) {
+    e.preventDefault();
+  });
+  
 });

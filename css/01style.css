@@ -80,3 +80,17 @@
 	display: block;
 	width: 500px;
 }
+
+/* RWD設定 */
+@media screen and (max-width: 415px) {
+
+	/* top */
+	.top {
+		height: 250px;
+		background-position: center;
+		background-size: cover;
+	}
+
+
+
+}
