@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+
+    <style>
+        #map {
+            width: 800px;
+            height: 600px;
+            margin: auto;
+        }
+
+        /*
+ * Optional: Makes the sample page fill the window.
+ */
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcMj1Nr4ohrpT0RF4IKM-weBgIM2jTbw0&callback=initMap">
+        </script>
+    <script>
+        function initMap() {
+            // The location of 國立臺北商業大學
+            const center = { lat: 25.04194046530447, lng: 121.52561191179502 };
+            // The map, centered at 國立臺北商業大學 
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 18,
+                center: center,
+            });
+            // The marker, positioned at 國立臺北商業大學
+            const img = "./img/placeholder.png"
+            for (let i = 0; i < locations.length; i++) {
+                const marker = new google.maps.Marker({
+                    position: locations[i],
+                    map: map,
+                    title: pos_name[i],
+                    icon: img
+                });
+
+                const infowindow = new google.maps.InfoWindow({
+                    content: pos_name[i],
+                    ariaLabel: pos_name[i],
+                });
+
+
+
+                marker.addListener("click", () => {
+                    infowindow.open({
+                        anchor: marker,
+                        map,
+                    });
+                });
+            }
+        }
+
+        const pos_name = ["巧之味手工水餃 濟南店", "饌味香麵食館", "嘉嘉漢堡", "金華香港燒臘快餐店", "小李便當店", "有煎餃子館"]
+        const locations = [
+            { lat: 25.041378448039925, lng: 121.52682592641193 },
+            { lat: 25.04128031804101, lng: 121.52685370981233 },
+            { lat: 25.041460874979414, lng: 121.52725679878405 },
+            { lat: 25.042035550449313, lng: 121.52794393414615 },
+            { lat: 25.041750549871384, lng: 121.52657378284604 },
+            { lat: 25.043043614667223, lng: 121.52647984557468 },
+        ];
+
+        window.initMap = initMap;
+    </script>
+
+</body>
+
+</html>
